@@ -1,5 +1,5 @@
 # Bchtokena - Web 3.0 Blockchain Application example
-![Krypt](https://i.ibb.co/DVF4tNW/image.png)
+![Bchtokena](https://i.ibb.co/h87RCHb/Bcktokena.jpg)
 
 ## Introduction
-Build Web 3.0 Application with Web 3.0, Solidity and Metamask extention.
+Build Web 3.0 Application with Reactjs, Web 3.0, Solidity and Metamask extension.
