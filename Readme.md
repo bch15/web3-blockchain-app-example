@@ -2,4 +2,4 @@
 ![Bchtokena](https://i.ibb.co/h87RCHb/Bcktokena.jpg)
 
 ## Introduction
-Build Web 3.0 Application with Reactjs, Web 3.0, Solidity and Metamask extension.
+Web 3.0 Application with Reactjs, Web 3.0, Solidity and Metamask extension.
