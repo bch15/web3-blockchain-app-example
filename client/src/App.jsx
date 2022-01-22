@@ -13,10 +13,10 @@ const App = () => {
       <div className="gradient-bg-welcome">
         <Navbar />
         <Welcome />
+        <Services />
+        <Transaction />
+        <Footer />
       </div>
-      <Services />
-      <Transaction />
-      <Footer />
     </div>
   );
 };

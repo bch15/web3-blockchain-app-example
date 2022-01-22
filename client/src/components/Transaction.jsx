@@ -56,7 +56,7 @@ const TransactionCard = ({
           )}
         </div>
         <img
-          src={gifUrl}
+          src={gifUrl || url}
           alt="gif"
           className="w-full h-64 2xl:h-96 rounded-md shadow-lg object-cover"
         />
@@ -72,11 +72,11 @@ const Transaction = () => {
   const { currentAccount, transactions } = useContext(TransactionContext);
 
   return (
-    <div className="flex w-full justify-center items-center 2xl:px-20 gradient-bg-transactions">
+    <div className="flex w-full justify-center items-center 2xl:px-20">
       <div className="flex flex-col md:p-12 py-12 px-4">
         {currentAccount ? (
           <h3 className="text-white text-3xl text-center my-2">
-            Latest Transactions
+            Latest Transactions in Smart Contract
           </h3>
         ) : (
           <h3 className="text-white text-3xl text-center my-2">

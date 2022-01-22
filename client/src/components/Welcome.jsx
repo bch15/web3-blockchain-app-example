@@ -30,6 +30,7 @@ const Welcome = () => {
     formData,
     sendTransaction,
     isLoading,
+    transactions,
   } = useContext(TransactionContext);
 
   const handleSubmit = (e) => {
@@ -51,7 +52,7 @@ const Welcome = () => {
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
             Explore the crypto world. Buy and sell cryptocurrencies easily on
-            Kripto.
+            Bchtokena.
           </p>
           {!currentAccount && (
             <button
@@ -74,6 +75,7 @@ const Welcome = () => {
           </div>
         </div>
 
+        {/*Account card*/}
         <div className="flex flex-col flex-1 items-center justify-start w-full mf:mt-0 mt-10">
           <div className="p-3 justify-end items-start flex-col rounded-xl h-40 sm:w-72 w-full my-5 eth-card white-glassmorphism">
             <div className="flex justify-between flex-col w-full h-full">
@@ -87,9 +89,16 @@ const Welcome = () => {
                 <p className="text-white font-light text-sm">
                   {currentAccount ? shortenAddress(currentAccount) : "Address"}
                 </p>
-                <p className="text-white font-semibold text-lg mt-1">
-                  Ethereum
-                </p>
+                <div className="flex flex-row justify-between items-center">
+                  <p className="text-white font-semibold text-lg mt-1">
+                    Ethereum
+                  </p>
+                  <p className="text-white font-light text-sm mt-1.5">
+                    {transactions.length
+                      ? `All Transactions: ${transactions.length}`
+                      : ""}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -127,7 +136,7 @@ const Welcome = () => {
               <button
                 type="button"
                 onClick={handleSubmit}
-                className="text-white w-full mt-2 border-[1px] border-[#3d4f7c] p-2 rounded-full cursor-pointer"
+                className="text-white w-full mt-2 border-[1px] border-[#3d4f7c] p-2 rounded-full cursor-pointer hover:bg-[#2546bd]"
               >
                 Send Now
               </button>
