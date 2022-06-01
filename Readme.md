@@ -5,3 +5,10 @@
 https://web3-app.netlify.app
 ## Introduction
 Web 3.0 Application with Reactjs, Web 3.0, Solidity and Metamask extension.
+## Technologies
+- ReactJS
+- Metamask Extension
+- Solidity
+- Hardhat
+- Alchemy
+- Giphy
